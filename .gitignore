@@ -1,0 +1,8 @@
+bin/
+obj/
+node_modules/
+src/CountryRoute.Api/wwwroot/
+publish/
+*.zip
+.vs/
+.DS_Store
