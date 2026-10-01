@@ -13,7 +13,9 @@ GET /PAN  ->  {"destination":"PAN","list":["USA","MEX","GTM","HND","NIC","CRI","
 GET /BLZ  ->  {"destination":"BLZ","list":["USA","MEX","BLZ"]}
 ```
 
-Live URL: _add after deploying_
+Live URL: https://country-route-dotnet-dg.azurewebsites.net
+
+Repo: https://github.com/CrimsonCosmos/country-route-api-dotnet
 
 - `/` is the React UI: type a code, see the route as a list.
 - `/PAN` (any three-letter code) is the JSON API. The UI calls the same endpoint at `/api/PAN`.
@@ -74,6 +76,7 @@ az login
 ```
 
 The script creates a resource group and Linux App Service plan, creates the web app on the
-`DOTNETCORE:10.0` runtime, enforces HTTPS, and zip-deploys the published app. Override
+`DOTNETCORE:10.0` runtime, enforces HTTPS, and zip-deploys the published app. `LOCATION` defaults to `northcentralus`; Azure for Students restricts regions, so pick one your
+subscription allows. Override
 `RG`, `LOCATION`, `PLAN`, `SKU`, or `RUNTIME` through environment variables. To remove everything:
 `az group delete -n country-route-rg`.

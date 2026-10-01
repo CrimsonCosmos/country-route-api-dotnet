@@ -7,7 +7,7 @@ set -euo pipefail
 
 APP="${1:-country-route-api-$RANDOM}"
 RG="${RG:-country-route-rg}"
-LOCATION="${LOCATION:-centralus}"
+LOCATION="${LOCATION:-northcentralus}"
 PLAN="${PLAN:-country-route-plan}"
 SKU="${SKU:-F1}"
 RUNTIME="${RUNTIME:-DOTNETCORE:10.0}"
