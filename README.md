@@ -2,8 +2,7 @@
 
 C# / ASP.NET Core version of the C.H. Robinson interview project (Options 1 and 2
 combined), designed for C.H. Robinson's own stack: .NET for the API, React for the UI,
-Azure for hosting. A JavaScript/Vercel version of the same project lives in a separate repo,
-`country-route-api`.
+Azure for hosting.
 
 Given a three-letter North American country code, it returns the ordered list of countries
 a driver passes through going from the USA to that destination.
